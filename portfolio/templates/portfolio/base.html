@@ -1,0 +1,76 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %}Personal Portfolio{% endblock %}</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="{% static 'portfolio/style.css' %}">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="">My Portfolio</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="{% url 'home' %}">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{% url 'portfolio' %}">Portfolio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{% url 'about' %}">About</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	{% block content %}{% endblock %}
+
+	<!-- <footer class="bg-dark text-light py-0">
+		<div class="container">
+		  <div class="row">
+			<div class="col-lg-9 mb-1 mb-lg-0">
+			  <h5 class="text-uppercase mb-4">Contact Information</h5>
+			  <ul class="list-unstyled">
+				<li><i class="bi bi-geo-alt-fill me-5"></i>1 Grace Terr, Harrison, NJ USA</li>
+				<li><i class="bi bi-telephone-fill me-5"></i>(973)-495-3777</li>
+				<li><i class="bi bi-envelope-fill me-5"></i>jd783@njit.edu</li>
+			  </ul>
+			</div> -->
+			<!-- <div class="col-lg-3 mb-4 mb-lg-0">
+			  <h5 class="text-uppercase mb-4">Links</h5>
+			  <ul class="list-unstyled">
+				<li><a href="{% url 'home' %}" class="text-light">Home</a></li>
+				<li><a href="{% url 'portfolio' %}" class="text-light">Portfolio</a></li>
+				<li><a href="{% url 'about' %}" class="text-light">About</a></li>
+			  </ul>
+			</div> -->
+			<!-- <div class="col-lg-3">
+			  <h5 class="text-uppercase mb-4">Social Media</h5>
+			  <ul class="list-unstyled">
+				<li><a href="#" class="text-light"><i class="bi bi-facebook me-3"></i>Facebook</a></li>
+				<li><a href="#" class="text-light"><i class="bi bi-twitter me-3"></i>Twitter</a></li>
+				<li><a href="#" class="text-light"><i class="bi bi-linkedin me-3"></i>LinkedIn</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</div><br>
+		<br>
+		<div class="text-center p-0 bg-secondary">
+		  &copy; 2023 My Website. All rights reserved.
+		</div>
+	  </footer> -->
+
+	  
+	  
+					  
+

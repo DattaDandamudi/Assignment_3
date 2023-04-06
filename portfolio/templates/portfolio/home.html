@@ -1,0 +1,44 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container py-5">
+  <div class="row">
+    <div class="col-md-4 mb-4 mb-md-8 ml-lg-5">
+      <div class="card bg-dark text-white border-0">
+		<img src="{% static 'portfolio/profile.jpg' %}" alt="Profile Image" class="card-img"> <br>  
+		      <div class="card-body">
+          <h5 class="card-title mb-0">Janak Datta Dandamudi</h5><br>
+          <p class="card-text mb-0">Email: jd783@njit.edu</p><br>
+          <p class="card-text mb-0">Github: <a href="https://github.com/DattaDandamudi" class="text-reset">DattaDandamudi</a></p><br>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="alert alert-primary" role="alert">
+        <h4 class="alert-heading">Welcome to my Portfolio!</h4>
+        <p class="mb-0">I am pursuing a Masters in Cybersecurity at NJIT, developing expertise in a variety of essential areas such as cryptography, networking, risk management, and ethical hacking.</p>
+        <hr class="my-4">
+        <p class="mb-0">I am committed to applying this knowledge to help protect digital assets and mitigate cyber threats.</p>
+      </div>
+      <div class="alert alert-secondary" role="alert">
+        <h4 class="alert-heading">My Passion for Cybersecurity</h4>
+        <p class="mb-0">My passion for cybersecurity began during my undergraduate studies in computer science, where I developed a keen interest in the field. I realized the increasing importance of cybersecurity in today's digital landscape, and wanted to explore this area in more depth.</p>
+        <hr class="my-4">
+        <p class="mb-0">This led me to pursue my Masters in Cybersecurity at NJIT, which has been an incredible experience thus far.</p>
+      </div>
+      <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">My Coursework and Experience</h4>
+        <p class="mb-0">My coursework has been rigorous and has challenged me to develop critical thinking skills, hone my problem-solving abilities, and think creatively about cybersecurity solutions. I have had the opportunity to explore a range of topics, including network security, cryptography, security risk management, ethical hacking, and information assurance. These courses have provided me with a solid foundation in the key concepts and techniques of cybersecurity.</p>
+        <hr class="my-4">
+        <p class="mb-0">In addition to my academic pursuits, I have participated in cybersecurity competitions and volunteered my time to help organizations with cybersecurity risk assessments and vulnerability assessments.</p>
+      </div>
+      <div class="alert alert-danger" role="alert">
+        <h4 class="alert-heading">My Goals</h4>
+		  <p>Looking ahead, my goal is to apply my expertise in cybersecurity to help organizations protect their digital assets from cyber threats. I am eager to continue learning and staying up-to-date with the latest cybersecurity trends and techniques, and to contribute to the field through research and practical application. Ultimately, my aim is to become a cybersecurity leader who helps drive innovation and progress in this critical area.</p>
+		</div>
+	  </div>
+	</div>
+  </div>
+  
+{% endblock %}
